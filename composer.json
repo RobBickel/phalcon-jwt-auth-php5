@@ -1,18 +1,18 @@
 {
-    "name": "dmkit/phalcon-jwt-auth",
-    "description": "A simple JWT middleware for Phalcon Micro to handle stateless authentication",
+    "name": "RobBickel/phalcon-jwt-auth-php5",
+    "description": "A simple JWT middleware for Phalcon Micro to handle stateless authentication, cloned from https://github.com/dmkit/phalcon-jwt-auth and made compatible with php5",
     "keywords": ["phalcon", "jwt", "authentication"],
     "type": "library",
     "authors": [
         {
-            "name": "Dan Bangayan",
-            "email": "danny.bangayan@gmail.com",
+            "name": "Rob Bickel",
+            "email": "bickel.rob@gmail.com",
             "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.0",
+        "php": ">=5.0",
         "ext-phalcon": "^3.0",
         "firebase/php-jwt": "^5.0"
     },

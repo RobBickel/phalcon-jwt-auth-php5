@@ -4,13 +4,13 @@ A simple JWT middleware for Phalcon Micro to handle stateless authentication.
 
 ## Installation
 ```bash
-$ composer require dmkit/phalcon-jwt-auth
+$ composer require RobBickel/phalcon-jwt-auth
 ```
 or in your composer.json
 ```json
 {
     "require": {
-		"dmkit/phalcon-jwt-auth" : "dev-master"
+		"RobBickel/phalcon-jwt-auth" : "dev-master"
     }
 }
 
