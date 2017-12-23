@@ -4,13 +4,13 @@ A simple JWT middleware for Phalcon Micro to handle stateless authentication.
 
 ## Installation
 ```bash
-$ composer require RobBickel/phalcon-jwt-auth
+$ composer require RobBickel/phalcon-jwt-auth-php5
 ```
 or in your composer.json
 ```json
 {
     "require": {
-		"RobBickel/phalcon-jwt-auth" : "dev-master"
+		"RobBickel/phalcon-jwt-auth-php5" : "dev-master"
     }
 }
 
@@ -35,7 +35,7 @@ secretKey = 923753F2317FC1EE5B52DF23951B
 
 ;; expiry time in minutes
 payload[exp] = 1440
-payload[iss] = phalcon-jwt-auth
+payload[iss] = phalcon-jwt-auth-php5
 
 ; Micro Applications do not have a controller or dispatcher
 ; so to know the resource being called we have to check the actual URL.
@@ -111,7 +111,7 @@ $authConfig = [
     'secretKey' => '923753F2317FC1EE5B52DF23951B1',
     'payload' => [
             'exp' => 1440,
-            'iss' => 'phalcon-jwt-auth'
+            'iss' => 'phalcon-jwt-auth-php5'
         ],
      'ignoreUri' => [
             '/',
