@@ -91,6 +91,16 @@ use Phalcon\Config\Adapter\Ini as ConfigIni;
 use Phalcon\Di\FactoryDefault;
 use Dmkit\Phalcon\Auth\Middleware\Micro as AuthMicro;
 
+$loader = new Loader();
+
+$loader->registerFiles(
+    [
+        __DIR__ . '/vendor/autoload.php'
+    ]
+);
+
+$loader->register();
+
 // set default services
 $di = new FactoryDefault();
 
