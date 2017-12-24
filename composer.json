@@ -1,7 +1,7 @@
 {
-    "name": "RobBickel/phalcon-jwt-auth-php5",
+    "name": "robbickel/phalcon-jwt-auth-php5",
     "description": "A simple JWT middleware for Phalcon Micro to handle stateless authentication, cloned from https://github.com/dmkit/phalcon-jwt-auth and made compatible with php5",
-    "keywords": ["phalcon", "jwt", "authentication"],
+    "keywords": ["phalcon", "jwt", "authentication", "php5"],
     "type": "library",
     "authors": [
         {
