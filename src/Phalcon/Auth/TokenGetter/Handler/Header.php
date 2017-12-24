@@ -1,5 +1,4 @@
 <?php
-
 namespace Dmkit\Phalcon\Auth\TokenGetter\Handler;
 
 use Dmkit\Phalcon\Auth\TokenGetter\Handler\Adapter;

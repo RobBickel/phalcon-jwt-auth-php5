@@ -6,7 +6,7 @@ use Phalcon\Events\Event;
 use Phalcon\Events\Manager as EventsManager;
 use Dmkit\Phalcon\Auth\Auth;
 use Dmkit\Phalcon\Auth\TokenGetter\TokenGetter;
-use Dmkit\Phalcon\Auth\TokenGetter\Handler\Header;
+use Dmkit\Phalcon\Auth\TokenGetter\Handler\Header as reqHeader;
 use Dmkit\Phalcon\Auth\TokenGetter\Handler\QueryStr;
 
 /**
@@ -241,7 +241,7 @@ class Micro
 	public function check()
 	{
 		$request = $this->app['request'];
-		$getter = new TokenGetter( new Dmkit\Phalcon\Auth\TokenGetter\Handler\Header($request), new QueryStr($request));
+		$getter = new TokenGetter( new reqHeader($request), new QueryStr($request));
 		return $this->auth->check($getter, $this->secretKey);
 	}
 
