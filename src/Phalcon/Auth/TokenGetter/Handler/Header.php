@@ -22,8 +22,7 @@ class Header extends Adapter
      */
 	public function parse()
 	{
-		$raw_token = $this->_Request->getHeader($this->key);
-
+		$raw_token = getallheaders()[$this->key];
 		if(!$raw_token) {
 			return '';
 		}
