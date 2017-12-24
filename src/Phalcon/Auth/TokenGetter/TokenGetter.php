@@ -1,13 +1,10 @@
 <?php
-
 namespace Dmkit\Phalcon\Auth\TokenGetter;
-
-//use Dmkit\Phalcon\Auth\TokenGetter\AdapterInterface;
 
 /**
  * Dmkit\Phalcon\Auth\TokenGetter\TokenGetter.
  */
-class TokenGetter// implements AdapterInterface
+class TokenGetter
 {
 	// TokenGetters
 	protected $getters = [];
@@ -27,7 +24,7 @@ class TokenGetter// implements AdapterInterface
      *
      * @return string
      */
-	public function parse()// : string
+	public function parse()
 	{
 		foreach($this->getters as $getter) 
 		{

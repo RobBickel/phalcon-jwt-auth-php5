@@ -20,8 +20,8 @@ class QueryStr extends Adapter
     public function parse()// : string
     {
 		if(is_null($this->_Request->getQuery($this->key)))
-        return '';
+			return '';
 		else
-        return trim($this->_Request->getQuery($this->key));
+			return trim($this->_Request->getQuery($this->key));
     }
 }

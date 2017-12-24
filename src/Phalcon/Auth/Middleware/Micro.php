@@ -94,7 +94,7 @@ class Micro
 		$this->secretKey = $this->config['secretKey'];
 		
 		if(is_null((array) $this->config['payload']))
-		$this->payload = [];
+			$this->payload = [];
 		else
 			$this->payload = (array) $this->config['payload'];
 		
@@ -241,7 +241,7 @@ class Micro
 	public function check()
 	{
 		$request = $this->app['request'];
-		$getter = new TokenGetter( new Header($request), new  QueryStr($request));
+		$getter = new TokenGetter( new Dmkit\Phalcon\Auth\TokenGetter\Handler\Header($request), new QueryStr($request));
 		return $this->auth->check($getter, $this->secretKey);
 	}
 

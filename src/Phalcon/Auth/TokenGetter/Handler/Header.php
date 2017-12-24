@@ -21,7 +21,7 @@ class Header extends Adapter
      *
      * @return string
      */
-	public function parse()// : string
+	public function parse()
 	{
 		$raw_token = $this->_Request->getHeader($this->key);
 
@@ -36,7 +36,7 @@ class Header extends Adapter
      * Sets the header value prefix
      *
      */
-	public function  setPrefix(string $prefix)
+	public function setPrefix(string $prefix)
 	{
 		$this->prefix = $prefix;
 	}

@@ -1,10 +1,8 @@
 <?php
-
 namespace Dmkit\Phalcon\Auth;
 
 use Firebase\JWT\JWT;
 use Dmkit\Phalcon\Auth\Adapter;
-use Dmkit\Phalcon\Auth\TokenGetter\AdapterInterface as TokenGetter;
 
 /**
  * Dmkit\Phalcon\Auth\Auth.
@@ -47,7 +45,7 @@ class Auth extends Adapter
      *
      * @return bool
      */
-	public function check($parser, $key)//  : bool
+	public function check($parser, $key)
 	{
 		$token = $parser->parse();
 
