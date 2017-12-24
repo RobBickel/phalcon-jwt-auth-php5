@@ -22,12 +22,14 @@ class Header extends Adapter
      */
 	public function parse()
 	{
-		$raw_token = getallheaders()[$this->key];
-		if(!$raw_token) {
-			return '';
+		$headers = getallheaders();
+		$keys = array_keys($headers);
+		if(in_array($this->key, $keys)) {
+			$raw_token = getallheaders()[$this->key];
+			return trim( str_ireplace($this->prefix, '', $raw_token));
 		}
-
-		return trim( str_ireplace($this->prefix, '', $raw_token));
+		
+		return '';
 	}
 
 	/**
